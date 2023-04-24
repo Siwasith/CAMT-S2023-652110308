@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           .myDiv {
+                border: 20px solid rgb(250, 146, 146);
+                background-color: rgb(255, 0, 0);
+                margin: 40px;
+                padding: 20px;
+            }
+            .inline{
+                background-color: yellow;
+            }
+            .block{
+                padding: 0px;
+                margin: 0px;
+            }
+            .inline-block {
+                display: inline-block;
+                width: 100%;
+                height: 30px;
+                padding: 5px;
+                border: 1px solid blue;    
+                background-color: yellow; 
+            }
+            .block2 {
+                border: 2px solid rgb(179, 0, 0);
+                background-color: rgb(255, 109, 109);
+                padding: 20px;
+            }
+       
+            
+        </style>
+
+        <title>display-position-note</title>
+
+    </head>
+
+    <body>
+        <h1>display</h1>
+        <h2>Box Model</h2>
+        <div class="myDiv">
+            <p style="background-color: rgb(0, 145, 55);border : 20px solid rgb(255, 174, 0);">Simple box</p>
+        </div>  
+
+        <h2>CSS display</h2>
+        <div style="background-color: antiquewhite; padding: 20px;margin: 40px;">
+            <span style="background-color: yellow;">inline text1</span>
+            <span style="background-color: orange;">inline text</span>
+            <span style="background-color: red;">inline text3</span>
+            <span style="background-color: green;">inline text4</span>
+            <span style="background-color: purple;">inline text5</span>
+        </div> 
+
+        <h2>block</h2>
+        <div>
+            <p class="block" style="background-color: yellow;">Block text1</p>
+            <p class="block" style="background-color: orange;">Block text</p>
+            <p class="block" style="background-color: red;">Block text3</p>
+            <p class="block" style="background-color: green;">Block text4</p>
+            <p class="block" style="background-color: purple;">Block text5</p>
+        </div> 
+
+        <h2>inline block</h2>
+        <div class="inline-block">
+             <span >apple</span> 
+             <span >orange</span>
+             <span >mango</span>
+             <span >watermelon</span>
+        </div>
+
+        <h2>none</h2>
+        <div class="inline-block">
+            <span >apple</span> 
+             <span >orange</span>
+             <span style="display: none;">mango</span>
+             <span >watermelon</span>
+       </div>
+
+       <h2>visibility:hidden</h2>
+        <div class="inline-block">
+            <span >apple</span> 
+             <span style="visibility: hidden;">orange</span>
+             <span style="display: none;">mango</span>
+             <span >watermelon</span>
+       </div>
+
+       <h2>CSS position</h2>
+       <h3>Static</h3>
+       <div class="block2" style="position: static;width: 100px; height: 100px;"></div>  
+
+    
+       <h3>absolute</h3>
+       <h3>fixed width / height</h3>
+       <div class="block2" style="position: absolute;width: 100px; height: 100px;"></div>
+       <br><br><br><br><br><br>
+       
+       <h3>no width / height</h3>
+       <div class="block2"></div>  
+
+       <h3>fixed  width/height + right/top</h3>
+       <div class="block2" style="position: absolute;width: 40%; height: 40%;right: 50%;top: 1700px;"></div>
+
+
+
+    </body>
+</html>
